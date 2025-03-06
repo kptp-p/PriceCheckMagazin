@@ -1,9 +1,6 @@
-from datetime import datetime
-
 from sqlalchemy import select
-from sqlalchemy.exc import IntegrityError
 
-from src.db.models import async_session, User, UserProduct, PriceHistory
+from src.db.models import async_session, User, UserProduct
 
 
 async def set_user(tg_id: int) -> None:
